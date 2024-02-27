@@ -1,0 +1,26 @@
+[tool.setuptools]
+py-modules = ["scgraph_data"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scgraph_data"
+version = "1.0.0"
+description = "Large geograph data for the scgraph package."
+authors = [
+    {name="Connor Makowski", email="conmak@mit.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    'License :: OSI Approved :: MIT License',
+    "Operating System :: OS Independent",
+]
+dependencies = ['scgraph>=1.4.0']
+
+[project.urls]
+"Homepage" = "https://github.com/connor-makowski/scgraph_data"
+"Bug Tracker" = "https://github.com/connor-makowski/scgraph_data/issues"

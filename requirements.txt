@@ -1,0 +1,4 @@
+build>=1.0.3
+twine==4.0.2
+virtualenv>=20.24.6
+-e .

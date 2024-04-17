@@ -31,3 +31,12 @@ pip install scgraph_data
     - Attribution: [OpenStreetMaps](https://www.openstreetmap.org/)
     - Length Measurement: Kilometers
     - [World Railways Picture](https://raw.githubusercontent.com/connor-makowski/scgraph_data/main/static/world_railways.png)
+- world_highways_and_marnet_geograph:
+    - What: World highway and marnet network joined by ports
+    - Use: `from scgraph_data.world_highways_and_marnet import world_highways_and_marnet_geograph`
+    - Attribution: [OpenStreetMaps](https://www.openstreetmap.org/)
+    - Attribution: [searoute](https://github.com/genthalili/searoute-py)
+    - Length Measurement: Kilometers
+    - [World Highways and Marine Picture](https://raw.githubusercontent.com/connor-makowski/scgraph_data/main/static/world_highways_and_marnet.png)
+    - Note: These two networks are connected by ports, where each port is joined to each respective network by using the closest euclidian entry point.
+    - [Used Ports Picture](https://raw.githubusercontent.com/connor-makowski/scgraph_data/main/static/world_highway_and_marnet_port_connections.png)

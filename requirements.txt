@@ -1,4 +1,5 @@
 build>=1.0.3
+pamda>=2.2.0
 twine==4.0.2
 virtualenv>=20.24.6
 -e .

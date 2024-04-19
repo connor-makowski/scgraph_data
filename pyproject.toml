@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scgraph_data"
-version = "1.1.1"
+version = "2.0.0"
 description = "Large geograph data for the scgraph package."
 authors = [
     {name="Connor Makowski", email="conmak@mit.edu"}
@@ -19,7 +19,7 @@ classifiers = [
     'License :: OSI Approved :: MIT License',
     "Operating System :: OS Independent",
 ]
-dependencies = ['scgraph>=1.4.0']
+dependencies = ['scgraph>=2.0.0']
 
 [project.urls]
 "Homepage" = "https://github.com/connor-makowski/scgraph_data"

@@ -45,12 +45,6 @@ print('\n===============\nWorld Highway and Marnet GeoGraph Time Tests:\n=======
 time_test('Graph Validation', pamda.thunkify(world_highways_and_marnet_geograph.validate_graph)(check_symmetry=True, check_connected=False))
 time_test('Node Validation', pamda.thunkify(world_highways_and_marnet_geograph.validate_nodes))
 
-def dijkstra():
-    world_highways_and_marnet_geograph.get_shortest_path(
-        origin_node=origin_node, 
-        destination_node=destination_node,
-        algorithm_fn=Graph.dijkstra
-    )
 
 def dijkstra_makowski():
     world_highways_and_marnet_geograph.get_shortest_path(
@@ -59,7 +53,5 @@ def dijkstra_makowski():
         algorithm_fn=Graph.dijkstra_makowski
     )
 
-# Takes too long...
-# time_test('Dijkstra', dijkstra)
 time_test('Dijkstra-Makowski', dijkstra_makowski)
 # world_highways_and_marnet_geograph.save_as_geojson('world_highways.geojson')

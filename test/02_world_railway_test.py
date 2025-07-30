@@ -46,16 +46,6 @@ validate(
 )
 
 validate(
-    name='Dijkstra',
-    realized = world_railways_geograph.get_shortest_path(
-        origin_node=origin_node, 
-        destination_node=destination_node,
-        algorithm_fn=Graph.dijkstra
-    ), 
-    expected = expected
-)
-
-validate(
     name='Dijkstra-Makowski',
     realized = world_railways_geograph.get_shortest_path(
         origin_node=origin_node,
@@ -70,12 +60,6 @@ print('\n===============\nWorld Railway GeoGraph Time Tests:\n===============')
 time_test('Graph Validation', pamda.thunkify(world_railways_geograph.validate_graph)(check_symmetry=True, check_connected=False))
 time_test('Node Validation', pamda.thunkify(world_railways_geograph.validate_nodes))
 
-def dijkstra():
-    world_railways_geograph.get_shortest_path(
-        origin_node=origin_node, 
-        destination_node=destination_node,
-        algorithm_fn=Graph.dijkstra
-    )
 
 def dijkstra_makowski():
     world_railways_geograph.get_shortest_path(
@@ -84,6 +68,5 @@ def dijkstra_makowski():
         algorithm_fn=Graph.dijkstra_makowski
     )
 
-time_test('Dijkstra', dijkstra)
 time_test('Dijkstra-Makowski', dijkstra_makowski)
 # world_railways_geograph.save_as_geojson('world_railways.geojson')

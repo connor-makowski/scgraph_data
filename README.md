@@ -2,6 +2,11 @@
 [![PyPI version](https://badge.fury.io/py/scgraph_data.svg)](https://badge.fury.io/py/scgraph_data)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# Deprecated: Now deprecated in favor of keeping everything in the main repo
+See: https://github.com/connor-makowski/scgraph
+
+# Old README for scgraph_data
+
 Large geograph data for the [scgraph](https://github.com/connor-makowski/scgraph) package. This package includes larger geographs that would be too large to include in the main scgraph package. These geographs include larger and more complete networks like the world highway and world railway networks. 
 
 Please note that these geographs are simplified and are not 100% accurate. They are also not directional geographs and should not be used for navigation or any other safety critical applications.
